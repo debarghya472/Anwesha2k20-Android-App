@@ -118,7 +118,7 @@ public class EventDetailsFragment extends BottomSheetDialogFragment {
         CardView cardQua = view.findViewById(R.id.card_event_details_qua);
         CardView cardPen = view.findViewById(R.id.card_event_details_pen);
 
-        Button register = view.findViewById(R.id.button_register);
+        //Button register = view.findViewById(R.id.button_register);
 
         if (color[0] != 0) {
             cardPrimary.setCardBackgroundColor(color[0]);
@@ -126,7 +126,7 @@ public class EventDetailsFragment extends BottomSheetDialogFragment {
             cardTer.setCardBackgroundColor(color[0]);
             cardQua.setCardBackgroundColor(color[0]);
             cardPen.setCardBackgroundColor(color[0]);
-            register.setBackgroundTintList(ColorStateList.valueOf(color[0]));
+           // register.setBackgroundTintList(ColorStateList.valueOf(color[0]));
         }
 
         TextView name = view.findViewById(R.id.name);
@@ -151,7 +151,7 @@ public class EventDetailsFragment extends BottomSheetDialogFragment {
             organiserPhone.setImageTintList(ColorStateList.valueOf(color[2]));
             rulebook.setTextColor(color[2]);
             rulebookImg.setImageTintList(ColorStateList.valueOf(color[2]));
-            register.setTextColor(color[2]);
+            //register.setTextColor(color[2]);
         }
 
         name.setText(current.getEvName());
@@ -197,7 +197,7 @@ public class EventDetailsFragment extends BottomSheetDialogFragment {
             cardPen.setVisibility(View.GONE);
         }
 
-        if (current.getEvAmount() != null && !current.getEvAmount().isEmpty()) {
+        /*if (current.getEvAmount() != null && !current.getEvAmount().isEmpty()) {
             register.setText(String.format("Register (₹ %s)", current.getEvAmount()));
         }
 
@@ -222,7 +222,7 @@ public class EventDetailsFragment extends BottomSheetDialogFragment {
                 Intent i = new Intent(context, LoginRegisterActivity.class);
                 startActivity(i);
             }
-        });
+        });*/
 
         super.onViewCreated(view, savedInstanceState);
     }
