@@ -48,12 +48,12 @@ public class ProniteFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
 
-        ImageView poster = view.findViewById(R.id.poster);
+        //ImageView poster = view.findViewById(R.id.poster);
         //CardView contact = view.findViewById(R.id.card_event_details_qua);
         //Button register = view.findViewById(R.id.button_register);
         ImageButton map = view.findViewById(R.id.button_map);
 
-        String posterUrl = "https://celesta.org.in/backend/admin/events/posters/ATM1245_Anubhav%20Singh%20Bassi.jpg";
+        /*String posterUrl = "https://celesta.org.in/backend/admin/events/posters/ATM1245_Anubhav%20Singh%20Bassi.jpg";
         Glide.with(context)
                 .asBitmap()
                 .load(posterUrl)
@@ -64,7 +64,7 @@ public class ProniteFragment extends Fragment {
             Intent i = new Intent(context, ImageViewerActivity.class);
             i.putExtra("image_url", posterUrl);
             startActivity(i);
-        });
+        });*/
 
 
         map.setOnClickListener(view13 -> {
